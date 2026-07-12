@@ -4,7 +4,7 @@ window.NABAA_CONTENT = {
     nameEn: "Nabaa Medical Complex",
     address: "نينوى — سنجار — حي آزادي — قرب دورة العلم",
     maps: "https://maps.app.goo.gl/Tj2rkX3As4VZuWJc8",
-    waze: "https://waze.com/ul/hsymy877x6"
+    waze: "https://ul.waze.com/ul?place=ChIJx2qvNK3jTBURpqYP62StY4U&ll=36.31793750%2C41.85181250&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
   },
 
   phones: [
@@ -72,7 +72,7 @@ window.NABAA_CONTENT = {
     {
       name: "Waze",
       label: "الموقع والاتجاهات",
-      url: "https://waze.com/ul/hsymy877x6",
+      url: "https://ul.waze.com/ul?place=ChIJx2qvNK3jTBURpqYP62StY4U&ll=36.31793750%2C41.85181250&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location",
       icon: "fa-brands fa-waze"
     }
   ]

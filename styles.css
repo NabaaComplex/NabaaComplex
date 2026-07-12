@@ -235,7 +235,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .quick-links {
   padding-top: 18px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
 .quick-card {
@@ -533,7 +533,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .social-section { padding-bottom: 80px; }
 .social-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
 }
 .social-card {
@@ -677,4 +677,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .social-card[data-network="Waze"] .social-icon {
   color: #083d47;
   background: #63d7e8;
+}
+
+
+@media (max-width: 1100px) and (min-width: 901px) {
+  .social-list { grid-template-columns: repeat(3, 1fr); }
 }
