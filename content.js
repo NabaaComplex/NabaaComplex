@@ -16,28 +16,28 @@ window.NABAA_CONTENT = {
     {
       name: "الدكتور لقمان سلطان حسن",
       specialty: "استشاري الجراحة العامة والمنظارية والليزرية",
-      photo: "assets/dr-luqman.jpg",
+      photo: "assets/dr-luqman-card.jpg",
       days: ["الأحد", "الاثنين", "الأربعاء"],
       scheduleType: "fixed"
     },
     {
       name: "الدكتورة شهد لقمان سلطان",
       specialty: "بكالوريوس طب وجراحة الفم والأسنان",
-      photo: "assets/dr-shahad.jpg",
+      photo: "assets/dr-shahad-card.jpg",
       days: ["الأحد", "الاثنين"],
       scheduleType: "fixed"
     },
     {
       name: "الدكتورة أسيل حسين حسن",
       specialty: "طبيبة أمراض النسائية والولادة والعقم",
-      photo: "assets/dr-aseel.jpg",
+      photo: "assets/dr-aseel-card.jpg",
       days: ["الجمعة فقط"],
       scheduleType: "fixed"
     },
     {
       name: "الدكتور عمر نزار العبيدي",
       specialty: "اختصاص طب الأطفال وحديثي الولادة",
-      photo: "assets/dr-omar.jpg",
+      photo: "assets/dr-omar-card.jpg",
       days: ["الاثنين", "الأربعاء", "الخميس"],
       scheduleType: "fixed"
     }
