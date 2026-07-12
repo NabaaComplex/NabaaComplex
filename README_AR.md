@@ -18,7 +18,7 @@
 - أسماء الأطباء واختصاصاتهم.
 - أيام الحضور والملاحظات.
 - العنوان.
-- روابط Facebook وInstagram وTikTok وGoogle Maps.
+- روابط Facebook وInstagram وTikTok وGoogle Maps وWaze.
 
 ثم ارفع النسخة الجديدة إلى نفس الاستضافة. سيبقى رابط الموقع ورمز QR كما هما.
 

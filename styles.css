@@ -235,7 +235,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .quick-links {
   padding-top: 18px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
 }
 .quick-card {
@@ -597,6 +597,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .toast.show { transform: translate(-50%, 0); opacity: 1; }
 
+@media (max-width: 1050px) {
+  .quick-links { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
   .hero-card { grid-template-columns: 1fr; min-height: auto; }
   .hero-copy { text-align: center; }
@@ -652,3 +656,25 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .social-priority { padding-top: 34px; }
 .social-priority .section-heading { margin-bottom: 16px; }
+
+
+.location-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.location-actions .button {
+  flex: 1 1 180px;
+}
+.button-waze {
+  color: #083d47;
+  background: #63d7e8;
+  box-shadow: 0 12px 25px rgba(99, 215, 232, .22);
+}
+.button-waze:hover {
+  box-shadow: 0 16px 32px rgba(99, 215, 232, .28);
+}
+.social-card[data-network="Waze"] .social-icon {
+  color: #083d47;
+  background: #63d7e8;
+}

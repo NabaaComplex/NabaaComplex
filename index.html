@@ -119,6 +119,11 @@
         <span><strong>الموقع</strong><small>Google Maps</small></span>
         <i class="fa-solid fa-arrow-left"></i>
       </a>
+      <a class="quick-card" data-link="waze" target="_blank" rel="noopener">
+        <span class="quick-icon"><i class="fa-brands fa-waze"></i></span>
+        <span><strong>الموقع</strong><small>Waze</small></span>
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
     </section>
 
     <section id="doctors" class="section-shell content-section">
@@ -153,17 +158,23 @@
           <span class="eyebrow">العنوان</span>
           <h2>مجمع نبأ الطبي — سنجار</h2>
           <p id="address-text"></p>
-          <a class="button button-primary" data-link="maps" target="_blank" rel="noopener">
-            <i class="fa-solid fa-diamond-turn-right"></i>
-            الاتجاهات عبر Google Maps
-          </a>
+          <div class="location-actions">
+            <a class="button button-primary" data-link="maps" target="_blank" rel="noopener">
+              <i class="fa-solid fa-map-location-dot"></i>
+              Google Maps
+            </a>
+            <a class="button button-waze" data-link="waze" target="_blank" rel="noopener">
+              <i class="fa-brands fa-waze"></i>
+              Waze
+            </a>
+          </div>
         </div>
         <a class="map-visual" data-link="maps" target="_blank" rel="noopener" aria-label="فتح الموقع على خرائط Google">
           <div class="map-grid-lines"></div>
           <span class="map-pin"><i class="fa-solid fa-location-dot"></i></span>
           <div class="map-label">
             <strong>سنجار — حي آزادي</strong>
-            <small>اضغط لفتح الموقع</small>
+            <small>متاح عبر Google Maps وWaze</small>
           </div>
         </a>
       </div>

@@ -3,7 +3,8 @@ window.NABAA_CONTENT = {
     nameAr: "مجمع نبأ الطبي",
     nameEn: "Nabaa Medical Complex",
     address: "نينوى — سنجار — حي آزادي — قرب دورة العلم",
-    maps: "https://maps.app.goo.gl/Tj2rkX3As4VZuWJc8"
+    maps: "https://maps.app.goo.gl/Tj2rkX3As4VZuWJc8",
+    waze: "https://waze.com/ul/hsymy877x6"
   },
 
   phones: [
@@ -67,6 +68,12 @@ window.NABAA_CONTENT = {
       label: "الموقع والاتجاهات",
       url: "https://maps.app.goo.gl/Tj2rkX3As4VZuWJc8",
       icon: "fa-solid fa-map-location-dot"
+    },
+    {
+      name: "Waze",
+      label: "الموقع والاتجاهات",
+      url: "https://waze.com/ul/hsymy877x6",
+      icon: "fa-brands fa-waze"
     }
   ]
 };

@@ -8,6 +8,10 @@
     link.href = data.clinic.maps;
   });
 
+  document.querySelectorAll('[data-link="waze"]').forEach(link => {
+    link.href = data.clinic.waze;
+  });
+
   const address = document.getElementById("address-text");
   if (address) address.textContent = data.clinic.address;
 
