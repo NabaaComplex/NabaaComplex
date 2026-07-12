@@ -31,7 +31,6 @@
       <div class="schedule-block">
         <div class="schedule-label"><i class="fa-regular fa-calendar"></i> موعد الحضور</div>
         <div class="day-list">${chips}</div>
-        <p class="schedule-note">${doctor.note}</p>
       </div>
     `;
     doctorGrid.appendChild(card);

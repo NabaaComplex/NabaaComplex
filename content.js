@@ -18,32 +18,28 @@ window.NABAA_CONTENT = {
       specialty: "استشاري الجراحة العامة والمنظارية والليزرية",
       photo: "assets/dr-luqman.jpg",
       days: ["الأحد", "الاثنين", "الأربعاء"],
-      scheduleType: "fixed",
-      note: "أيام الحضور المعتادة في مجمع نبأ الطبي."
+      scheduleType: "fixed"
     },
     {
       name: "الدكتورة شهد لقمان سلطان",
       specialty: "بكالوريوس طب وجراحة الفم والأسنان",
       photo: "assets/dr-shahad.jpg",
       days: ["الأحد", "الاثنين"],
-      scheduleType: "fixed",
-      note: "أيام الحضور المؤكدة في مجمع نبأ الطبي."
+      scheduleType: "fixed"
     },
     {
       name: "الدكتورة أسيل حسين حسن",
       specialty: "طبيبة أمراض النسائية والولادة والعقم",
       photo: "assets/dr-aseel.jpg",
       days: ["الجمعة فقط"],
-      scheduleType: "fixed",
-      note: "الحضور يوم الجمعة."
+      scheduleType: "fixed"
     },
     {
       name: "الدكتور عمر نزار العبيدي",
       specialty: "اختصاص طب الأطفال وحديثي الولادة",
       photo: "assets/dr-omar.jpg",
       days: ["الاثنين", "الأربعاء", "الخميس"],
-      scheduleType: "fixed",
-      note: "أيام الحضور المؤكدة في مجمع نبأ الطبي."
+      scheduleType: "fixed"
     }
   ],
 
