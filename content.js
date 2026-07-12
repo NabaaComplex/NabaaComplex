@@ -16,6 +16,7 @@ window.NABAA_CONTENT = {
     {
       name: "الدكتور لقمان سلطان حسن",
       specialty: "استشاري الجراحة العامة والمنظارية والليزرية",
+      photo: "assets/dr-luqman.jpg",
       days: ["الأحد", "الاثنين", "الأربعاء"],
       scheduleType: "fixed",
       note: "أيام الحضور المعتادة في مجمع نبأ الطبي."
@@ -23,13 +24,15 @@ window.NABAA_CONTENT = {
     {
       name: "الدكتورة شهد لقمان سلطان",
       specialty: "بكالوريوس طب وجراحة الفم والأسنان",
-      days: ["عادةً الأحد والاثنين"],
-      scheduleType: "variable",
-      note: "الموعد غير ثابت؛ يرجى التواصل مع المجمع للتأكيد قبل الحضور."
+      photo: "assets/dr-shahad.jpg",
+      days: ["الأحد", "الاثنين"],
+      scheduleType: "fixed",
+      note: "أيام الحضور المؤكدة في مجمع نبأ الطبي."
     },
     {
       name: "الدكتورة أسيل حسين حسن",
       specialty: "طبيبة أمراض النسائية والولادة والعقم",
+      photo: "assets/dr-aseel.jpg",
       days: ["الجمعة فقط"],
       scheduleType: "fixed",
       note: "الحضور يوم الجمعة."
@@ -37,9 +40,10 @@ window.NABAA_CONTENT = {
     {
       name: "الدكتور عمر نزار العبيدي",
       specialty: "اختصاص طب الأطفال وحديثي الولادة",
-      days: ["المواعيد متغيرة"],
-      scheduleType: "variable",
-      note: "لا يوجد جدول ثابت حاليًا؛ يرجى التواصل مع المجمع لمعرفة الموعد."
+      photo: "assets/dr-omar.jpg",
+      days: ["الاثنين", "الأربعاء", "الخميس"],
+      scheduleType: "fixed",
+      note: "أيام الحضور المؤكدة في مجمع نبأ الطبي."
     }
   ],
 

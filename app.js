@@ -21,12 +21,12 @@
     ).join("");
 
     card.innerHTML = `
-      <div class="doctor-top">
-        <span class="doctor-avatar" aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></span>
-        <div>
-          <h3 class="doctor-name">${doctor.name}</h3>
-          <p class="doctor-specialty">${doctor.specialty}</p>
-        </div>
+      <div class="doctor-photo-wrap">
+        <img class="doctor-photo" src="${doctor.photo}" alt="صورة ${doctor.name}" loading="lazy">
+      </div>
+      <div class="doctor-info">
+        <h3 class="doctor-name">${doctor.name}</h3>
+        <p class="doctor-specialty">${doctor.specialty}</p>
       </div>
       <div class="schedule-block">
         <div class="schedule-label"><i class="fa-regular fa-calendar"></i> موعد الحضور</div>

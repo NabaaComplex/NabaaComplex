@@ -291,8 +291,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   gap: 18px;
 }
 .doctor-card {
-  min-height: 280px;
-  padding: 26px;
+  min-height: 470px;
   display: flex;
   flex-direction: column;
   background: var(--surface);
@@ -309,25 +308,24 @@ button, a { -webkit-tap-highlight-color: transparent; }
   border-radius: 50%;
   background: rgba(8,170,169,.055);
   left: -55px; bottom: -65px;
+  pointer-events: none;
 }
-.doctor-top {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.doctor-photo-wrap {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: #f4f7f7;
+  border-bottom: 1px solid var(--line);
 }
-.doctor-avatar {
-  flex: 0 0 auto;
-  width: 58px; height: 58px;
-  display: grid; place-items: center;
-  border-radius: 18px;
-  font-size: 1.25rem;
-  color: #fff;
-  background: linear-gradient(135deg, var(--teal), var(--teal-deep));
-  box-shadow: 0 10px 20px rgba(8,170,169,.18);
+.doctor-photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
 }
-.doctor-card:nth-child(even) .doctor-avatar {
-  background: linear-gradient(135deg, var(--red), var(--red-deep));
-  box-shadow: 0 10px 20px rgba(245,31,58,.17);
+.doctor-info {
+  padding: 22px 24px 0;
 }
 .doctor-name {
   margin: 0;
@@ -341,7 +339,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .schedule-block {
   margin-top: auto;
-  padding-top: 22px;
+  padding: 22px 24px 24px;
 }
 .schedule-label {
   display: flex;
@@ -640,7 +638,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .section-heading { align-items: start; flex-direction: column; gap: 12px; }
   .section-heading h2, .booking-panel h2, .location-card h2 { font-size: 2rem; }
 
-  .doctor-card { min-height: 300px; padding: 21px; }
+  .doctor-card { min-height: 430px; }
+  .doctor-photo-wrap { height: 255px; }
   .booking-panel { padding: 28px 18px; border-radius: 26px; }
   .phone-item { grid-template-columns: auto 1fr; }
   .copy-button { grid-column: 1 / -1; width: 100%; }
@@ -657,3 +656,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+.social-priority { padding-top: 34px; }
+.social-priority .section-heading { margin-bottom: 16px; }
