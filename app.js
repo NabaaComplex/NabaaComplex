@@ -19,16 +19,12 @@
   if (serviceGrid) {
     data.services.forEach((service, index) => {
       const card = document.createElement("article");
-      card.className = `service-card${service.featured ? " service-card-featured service-card-featured-text" : ""}`;
+      card.className = "service-card";
       if (service.anchor) card.id = service.anchor;
 
       const listItems = service.items
         .map(item => `<li><i class="fa-solid fa-check" aria-hidden="true"></i><span>${item}</span></li>`)
         .join("");
-
-      const closing = service.closing
-        ? `<p class="service-closing"><i class="fa-solid fa-link"></i><span>${service.closing}</span></p>`
-        : "";
 
       card.innerHTML = `
         <div class="service-card-body">
@@ -42,7 +38,6 @@
           <p class="service-description">${service.description}</p>
           <div class="service-list-label">${service.listLabel || "تشمل الخدمات:"}</div>
           <ul class="service-list">${listItems}</ul>
-          ${closing}
         </div>
       `;
 
