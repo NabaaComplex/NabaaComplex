@@ -1581,3 +1581,166 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-photo-main figcaption { font-size: .76rem; right: 10px; bottom: 9px; }
   .gallery-slide { flex-basis: 89vw; }
 }
+
+
+/* --- V8: single approved complex photo + explicit laboratory section --- */
+.hero-media-single {
+  min-width: 0;
+  min-height: 500px;
+  position: relative;
+  display: block;
+}
+
+.hero-exterior {
+  height: 500px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  background: #dce9e9;
+  border: 7px solid rgba(255, 255, 255, .88);
+  border-radius: 28px;
+  box-shadow: 0 22px 48px rgba(16, 44, 48, .17);
+}
+
+.hero-exterior img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 52%;
+  transition: transform .55s ease;
+}
+
+.hero-exterior:hover img { transform: scale(1.02); }
+
+.hero-exterior-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(4, 28, 33, .76), rgba(4, 28, 33, .04) 62%);
+  pointer-events: none;
+}
+
+.hero-exterior figcaption {
+  position: absolute;
+  z-index: 2;
+  right: 22px;
+  bottom: 20px;
+  left: 22px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  color: #fff;
+}
+
+.hero-exterior figcaption span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+}
+
+.hero-exterior figcaption small {
+  color: rgba(255, 255, 255, .78);
+  font-weight: 700;
+}
+
+.laboratory-spotlight {
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: 54px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--teal-deep), var(--teal));
+  border-radius: 20px;
+  box-shadow: 0 16px 36px rgba(5, 127, 130, .20);
+}
+
+.laboratory-spotlight-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  background: rgba(255, 255, 255, .16);
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 16px;
+}
+
+.laboratory-spotlight strong,
+.laboratory-spotlight small { display: block; }
+.laboratory-spotlight strong { font-size: 1.08rem; }
+.laboratory-spotlight small { margin-top: 3px; color: rgba(255, 255, 255, .75); }
+
+.service-card-featured-text {
+  grid-column: 1 / -1;
+  display: block;
+  direction: rtl;
+  background:
+    radial-gradient(circle at 0 100%, rgba(8, 170, 169, .12), transparent 22rem),
+    #fff;
+}
+
+.service-card-featured-text .service-card-body {
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.service-card-featured-text .service-icon {
+  background: linear-gradient(135deg, var(--red), var(--red-deep));
+  box-shadow: 0 12px 24px rgba(245, 31, 58, .17);
+}
+
+.booking-panel {
+  grid-template-columns: 1.1fr .9fr;
+}
+
+.booking-info-card {
+  min-height: 260px;
+  padding: clamp(24px, 4vw, 38px);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  background: rgba(255, 255, 255, .11);
+  border: 1px solid rgba(255, 255, 255, .23);
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+}
+
+.booking-info-icon {
+  width: 68px;
+  height: 68px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  font-size: 1.55rem;
+  color: var(--teal-deep);
+  background: #fff;
+  border-radius: 21px;
+}
+
+.booking-info-card strong { font-size: 1.35rem; }
+.booking-info-card p { margin: 10px 0 0; color: rgba(255, 255, 255, .76); line-height: 1.8; }
+
+@media (max-width: 900px) {
+  .hero-media-single,
+  .hero-exterior { min-height: 430px; height: 430px; }
+  .booking-panel { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 650px) {
+  .hero-media-single,
+  .hero-exterior { min-height: 340px; height: 340px; }
+  .hero-exterior { border-width: 5px; border-radius: 22px; }
+  .hero-exterior figcaption { right: 15px; bottom: 14px; left: 15px; display: block; }
+  .hero-exterior figcaption small { display: block; margin-top: 5px; }
+  .laboratory-spotlight { grid-template-columns: 48px 1fr; padding: 15px; }
+  .laboratory-spotlight > i { display: none; }
+  .laboratory-spotlight-icon { width: 48px; height: 48px; border-radius: 14px; }
+  .service-card-featured-text .service-list { grid-template-columns: 1fr; }
+  .booking-info-card { min-height: auto; align-items: flex-start; }
+}

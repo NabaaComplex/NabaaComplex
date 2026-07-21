@@ -8,7 +8,7 @@
   <meta property="og:title" content="مجمع نبأ الطبي | رعاية طبية متكاملة في مكان واحد">
   <meta property="og:description" content="عيادات تخصصية ومختبر تحليلات طبية وخدمات صحية مساندة ضمن بيئة منظمة وآمنة في سنجار.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/complex/clinic-room.webp">
+  <meta property="og:image" content="assets/complex/complex-exterior.webp">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,6 @@
     </a>
     <nav aria-label="التنقل الرئيسي">
       <a href="#services">الخدمات</a>
-      <a href="#gallery">صور المجمع</a>
       <a href="#booking">الحجز</a>
       <a href="#location">الموقع</a>
     </nav>
@@ -96,21 +95,15 @@
           </div>
         </div>
 
-        <div class="hero-media" aria-label="صور حقيقية من داخل مجمع نبأ الطبي">
-          <figure class="hero-photo hero-photo-main">
-            <img src="assets/complex/clinic-room.webp" alt="إحدى العيادات الطبية داخل مجمع نبأ الطبي" fetchpriority="high">
-            <figcaption><i class="fa-solid fa-camera"></i> صور حقيقية من داخل المجمع</figcaption>
+        <div class="hero-media hero-media-single" aria-label="واجهة مجمع نبأ الطبي في سنجار">
+          <figure class="hero-exterior">
+            <img src="assets/complex/complex-exterior.webp" alt="واجهة مجمع نبأ الطبي في سنجار" fetchpriority="high">
+            <div class="hero-exterior-shade"></div>
+            <figcaption>
+              <span><i class="fa-solid fa-location-dot"></i> الواجهة الحقيقية للمجمع</span>
+              <small>سنجار — حي آزادي — قرب دورة العلم</small>
+            </figcaption>
           </figure>
-          <div class="hero-photo-stack">
-            <figure class="hero-photo hero-photo-small">
-              <img src="assets/complex/laboratory-overview.webp" alt="مختبر التحليلات الطبية داخل مجمع نبأ الطبي">
-              <figcaption>المختبر</figcaption>
-            </figure>
-            <figure class="hero-photo hero-photo-small">
-              <img src="assets/complex/dental-clinic-one.webp" alt="عيادة طب الأسنان داخل مجمع نبأ الطبي">
-              <figcaption>طب الأسنان</figcaption>
-            </figure>
-          </div>
           <div class="hero-brand-badge">
             <img src="assets/nabaa-logo.png" alt="شعار مجمع نبأ الطبي">
           </div>
@@ -166,31 +159,22 @@
       </div>
     </section>
 
-    <section id="gallery" class="section-shell content-section gallery-section">
-      <div class="section-heading gallery-heading">
-        <div>
-          <span class="eyebrow">من داخل المجمع</span>
-          <h2>جولة مصوّرة في مرافق مجمع نبأ الطبي</h2>
-        </div>
-        <div class="gallery-controls" aria-label="التنقل بين صور المجمع">
-          <button type="button" id="gallery-prev" aria-label="الصورة السابقة"><i class="fa-solid fa-arrow-right"></i></button>
-          <button type="button" id="gallery-next" aria-label="الصورة التالية"><i class="fa-solid fa-arrow-left"></i></button>
-        </div>
-      </div>
-      <div class="gallery-frame">
-        <div id="gallery-track" class="gallery-track" tabindex="0" aria-label="صور حقيقية من مرافق مجمع نبأ الطبي"></div>
-      </div>
-      <p class="gallery-note"><i class="fa-solid fa-circle-info"></i> الصور المعروضة حقيقية ومن مرافق المجمع وعياداته وخدماته.</p>
-    </section>
-
     <section id="services" class="section-shell content-section services-section">
       <div class="section-heading">
         <div>
           <span class="eyebrow">خدماتنا الطبية</span>
           <h2>العيادات والخدمات المتوفرة</h2>
         </div>
-        <p>سبعة أقسام وخدمات تخصصية ومساندة تسهّل حصول المراجع على التقييم، والتحاليل، والمتابعة والعلاج ضمن مكان واحد.</p>
+        <p>سبعة أقسام وخدمات تخصصية ومساندة، يتقدمها مختبر التحليلات الطبية، لتسهيل التقييم والفحوصات والمتابعة والعلاج ضمن مكان واحد.</p>
       </div>
+      <a class="laboratory-spotlight" href="#medical-laboratory" aria-label="الانتقال إلى قسم مختبر التحليلات الطبية">
+        <span class="laboratory-spotlight-icon"><i class="fa-solid fa-flask-vial"></i></span>
+        <span>
+          <strong>مختبر التحليلات الطبية متوفر داخل المجمع</strong>
+          <small>اضغط لعرض التحاليل والفحوصات المتاحة</small>
+        </span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
       <div id="service-grid" class="service-grid"></div>
     </section>
 
@@ -237,11 +221,11 @@
           <p>اضغط على الرقم للاتصال، أو استخدم زر النسخ لحفظه.</p>
           <div id="phone-list" class="phone-list"></div>
         </div>
-        <div class="booking-photo" aria-label="منطقة انتظار المراجعين داخل المجمع">
-          <img src="assets/complex/waiting-area.webp" alt="منطقة انتظار المراجعين داخل مجمع نبأ الطبي" loading="lazy">
-          <div class="booking-photo-label">
-            <span><i class="fa-solid fa-couch"></i></span>
-            <div><strong>مساحة استقبال وانتظار</strong><small>ضمن مرافق المجمع</small></div>
+        <div class="booking-info-card">
+          <span class="booking-info-icon"><i class="fa-solid fa-headset"></i></span>
+          <div>
+            <strong>خدمة مباشرة وواضحة</strong>
+            <p>اختر الرقم المناسب للاتصال بالمجمع والاستفسار عن الخدمات المتوفرة.</p>
           </div>
         </div>
       </div>
@@ -265,7 +249,7 @@
           </div>
         </div>
         <a class="map-visual" data-link="maps" target="_blank" rel="noopener" aria-label="فتح موقع مجمع نبأ الطبي على خرائط Google">
-          <img class="location-photo" src="assets/complex/complex-exterior-two.webp" alt="واجهة موقع مجمع نبأ الطبي في سنجار" loading="lazy">
+          <img class="location-photo" src="assets/complex/complex-exterior.webp" alt="واجهة موقع مجمع نبأ الطبي في سنجار" loading="lazy">
           <div class="location-photo-shade"></div>
           <span class="map-pin"><i class="fa-solid fa-location-dot"></i></span>
           <div class="map-label">

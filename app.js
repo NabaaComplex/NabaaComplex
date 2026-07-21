@@ -19,25 +19,18 @@
   if (serviceGrid) {
     data.services.forEach((service, index) => {
       const card = document.createElement("article");
-      card.className = `service-card${service.featured ? " service-card-featured" : ""}`;
+      card.className = `service-card${service.featured ? " service-card-featured service-card-featured-text" : ""}`;
+      if (service.anchor) card.id = service.anchor;
 
       const listItems = service.items
         .map(item => `<li><i class="fa-solid fa-check" aria-hidden="true"></i><span>${item}</span></li>`)
         .join("");
-
-      const media = service.image
-        ? `<figure class="service-card-media">
-             <img src="${service.image}" alt="${service.imageAlt || service.title}" loading="lazy">
-             <figcaption><i class="fa-solid fa-camera"></i> صورة حقيقية من مختبر المجمع</figcaption>
-           </figure>`
-        : "";
 
       const closing = service.closing
         ? `<p class="service-closing"><i class="fa-solid fa-link"></i><span>${service.closing}</span></p>`
         : "";
 
       card.innerHTML = `
-        ${media}
         <div class="service-card-body">
           <div class="service-card-head">
             <span class="service-icon" aria-hidden="true"><i class="${service.icon}"></i></span>
@@ -55,52 +48,6 @@
 
       serviceGrid.appendChild(card);
     });
-  }
-
-  const galleryTrack = document.getElementById("gallery-track");
-  if (galleryTrack && Array.isArray(data.gallery)) {
-    data.gallery.forEach((photo, index) => {
-      const figure = document.createElement("figure");
-      figure.className = "gallery-slide";
-      figure.dataset.galleryIndex = String(index);
-      figure.innerHTML = `
-        <img src="${photo.src}" alt="${photo.alt}" loading="lazy" decoding="async">
-        <figcaption>
-          <span>${photo.caption}</span>
-          <small>${String(index + 1).padStart(2, "0")} / ${String(data.gallery.length).padStart(2, "0")}</small>
-        </figcaption>
-      `;
-      galleryTrack.appendChild(figure);
-    });
-
-    const slides = Array.from(galleryTrack.querySelectorAll(".gallery-slide"));
-    const prevButton = document.getElementById("gallery-prev");
-    const nextButton = document.getElementById("gallery-next");
-    let galleryIndex = 0;
-
-    const showGallerySlide = nextIndex => {
-      galleryIndex = Math.max(0, Math.min(slides.length - 1, nextIndex));
-      slides[galleryIndex]?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-      if (prevButton) prevButton.disabled = galleryIndex === 0;
-      if (nextButton) nextButton.disabled = galleryIndex === slides.length - 1;
-    };
-
-    prevButton?.addEventListener("click", () => showGallerySlide(galleryIndex - 1));
-    nextButton?.addEventListener("click", () => showGallerySlide(galleryIndex + 1));
-
-    galleryTrack.addEventListener("keydown", event => {
-      if (event.key === "ArrowRight") {
-        event.preventDefault();
-        showGallerySlide(galleryIndex - 1);
-      }
-      if (event.key === "ArrowLeft") {
-        event.preventDefault();
-        showGallerySlide(galleryIndex + 1);
-      }
-    });
-
-    if (prevButton) prevButton.disabled = true;
-    if (nextButton) nextButton.disabled = slides.length <= 1;
   }
 
   const phoneList = document.getElementById("phone-list");

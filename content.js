@@ -4,7 +4,7 @@ window.NABAA_CONTENT = {
     nameEn: "Nabaa Medical Complex",
     address: "نينوى — سنجار — حي آزادي — قرب دورة العلم",
     maps: "https://maps.app.goo.gl/Tj2rkX3As4VZuWJc8",
-    waze: "https://ul.waze.com/ul?place=ChIJx2qvNK3jTBURpqYP62StY4U&ll=36.31793750%2C41.85181250&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+    waze: "https://www.waze.com/en/live-map/directions/iq/nineveh-governorate/sinjar/mjma-nba-altby?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&place=ChIJx2qvNK3jTBURpqYP62StY4U"
   },
 
   phones: [
@@ -14,6 +14,27 @@ window.NABAA_CONTENT = {
   ],
 
   services: [
+    {
+      title: "مختبر التحليلات الطبية",
+      anchor: "medical-laboratory",
+      icon: "fa-solid fa-flask-vial",
+      listLabel: "تشمل خدمات المختبر:",
+      description: "يوفّر مختبر مجمع نبأ الطبي خدمات التحاليل المختبرية للمساعدة في تشخيص الحالات الصحية، متابعة الاستجابة للعلاج، وإجراء الفحوصات الدورية، مع الحرص على الدقة في التعامل مع العينات والالتزام بإجراءات النظافة والسلامة.",
+      featured: true,
+      items: [
+        "تحاليل الدم العامة.",
+        "فحوصات سكر الدم.",
+        "تحاليل وظائف الكبد والكلى.",
+        "فحوصات الدهون والكوليسترول.",
+        "تحاليل البول والبراز.",
+        "فحوصات الالتهابات وبعض المؤشرات المناعية.",
+        "تحاليل الهرمونات والحمل.",
+        "الفحوصات المطلوبة قبل العمليات والتداخلات الطبية.",
+        "إجراء التحاليل الدورية ومتابعة الأمراض المزمنة.",
+        "تسليم النتائج بصورة منظّمة وإحالتها إلى العيادة المختصة عند الحاجة."
+      ],
+      closing: "يساهم وجود المختبر داخل المجمع في تسهيل رحلة المراجع، من الفحص والاستشارة الطبية إلى إجراء التحاليل المطلوبة ومتابعة النتائج ضمن مكان واحد."
+    },
     {
       title: "العيادة الجراحية",
       icon: "fa-solid fa-user-doctor",
@@ -75,28 +96,6 @@ window.NABAA_CONTENT = {
       ]
     },
     {
-      title: "مختبر التحليلات الطبية",
-      icon: "fa-solid fa-flask-vial",
-      listLabel: "تشمل خدمات المختبر:",
-      description: "يوفّر مختبر مجمع نبأ الطبي خدمات التحاليل المختبرية للمساعدة في تشخيص الحالات الصحية، متابعة الاستجابة للعلاج، وإجراء الفحوصات الدورية، مع الحرص على الدقة في التعامل مع العينات والالتزام بإجراءات النظافة والسلامة.",
-      image: "assets/complex/laboratory-equipment.webp",
-      imageAlt: "أجهزة مختبر التحليلات الطبية داخل مجمع نبأ الطبي",
-      featured: true,
-      items: [
-        "تحاليل الدم العامة.",
-        "فحوصات سكر الدم.",
-        "تحاليل وظائف الكبد والكلى.",
-        "فحوصات الدهون والكوليسترول.",
-        "تحاليل البول والبراز.",
-        "فحوصات الالتهابات وبعض المؤشرات المناعية.",
-        "تحاليل الهرمونات والحمل.",
-        "الفحوصات المطلوبة قبل العمليات والتداخلات الطبية.",
-        "إجراء التحاليل الدورية ومتابعة الأمراض المزمنة.",
-        "تسليم النتائج بصورة منظّمة وإحالتها إلى العيادة المختصة عند الحاجة."
-      ],
-      closing: "يساهم وجود المختبر داخل المجمع في تسهيل رحلة المراجع، من الفحص والاستشارة الطبية إلى إجراء التحاليل المطلوبة ومتابعة النتائج ضمن مكان واحد."
-    },
-    {
       title: "خدمات العناية التمريضية",
       icon: "fa-solid fa-hand-holding-medical",
       listLabel: "تشمل الخدمات:",
@@ -126,52 +125,11 @@ window.NABAA_CONTENT = {
     }
   ],
 
-  gallery: [
-    { src: "assets/complex/clinic-room.webp", alt: "إحدى العيادات الطبية داخل مجمع نبأ الطبي", caption: "إحدى العيادات الطبية" },
-    { src: "assets/complex/laboratory-overview.webp", alt: "مختبر التحليلات الطبية داخل مجمع نبأ الطبي", caption: "مختبر التحليلات الطبية" },
-    { src: "assets/complex/laboratory-equipment.webp", alt: "أجهزة مختبر التحليلات الطبية داخل مجمع نبأ الطبي", caption: "تجهيزات المختبر" },
-    { src: "assets/complex/dental-clinic-one.webp", alt: "عيادة طب الأسنان داخل مجمع نبأ الطبي", caption: "عيادة طب الأسنان" },
-    { src: "assets/complex/dental-clinic-two.webp", alt: "تجهيزات عيادة طب الأسنان داخل مجمع نبأ الطبي", caption: "تجهيزات طب الأسنان" },
-    { src: "assets/complex/dental-reception.webp", alt: "منطقة عيادة طب الأسنان داخل مجمع نبأ الطبي", caption: "منطقة عيادة الأسنان" },
-    { src: "assets/complex/examination-room.webp", alt: "غرفة الفحص والعناية داخل مجمع نبأ الطبي", caption: "غرفة الفحص والعناية" },
-    { src: "assets/complex/treatment-room.webp", alt: "غرفة الفحص والعناية التمريضية داخل مجمع نبأ الطبي", caption: "العناية التمريضية" },
-    { src: "assets/complex/waiting-area.webp", alt: "منطقة انتظار المراجعين داخل مجمع نبأ الطبي", caption: "منطقة انتظار المراجعين" },
-    { src: "assets/complex/pharmacy-team.webp", alt: "صيدلية مجمع نبأ الطبي", caption: "صيدلية المجمع" },
-    { src: "assets/complex/pharmacy-consultation.webp", alt: "خدمة الصيدلية داخل مجمع نبأ الطبي", caption: "خدمة الصيدلية" },
-    { src: "assets/complex/complex-exterior-one.webp", alt: "واجهة مجمع نبأ الطبي في سنجار", caption: "واجهة المجمع" },
-    { src: "assets/complex/complex-exterior-two.webp", alt: "موقع مجمع نبأ الطبي من الشارع", caption: "موقع المجمع" }
-  ],
-
   social: [
-    {
-      name: "Facebook",
-      label: "صفحة المجمع",
-      url: "https://www.facebook.com/NabaaMedicalComplex",
-      icon: "fa-brands fa-facebook-f"
-    },
-    {
-      name: "Instagram",
-      label: "@nabaacomplex",
-      url: "https://www.instagram.com/nabaacomplex",
-      icon: "fa-brands fa-instagram"
-    },
-    {
-      name: "TikTok",
-      label: "@nabaacomplex",
-      url: "https://www.tiktok.com/@nabaacomplex",
-      icon: "fa-brands fa-tiktok"
-    },
-    {
-      name: "Google Maps",
-      label: "الموقع والاتجاهات",
-      url: "https://maps.app.goo.gl/Tj2rkX3As4VZuWJc8",
-      icon: "fa-solid fa-map-location-dot"
-    },
-    {
-      name: "Waze",
-      label: "الموقع والاتجاهات",
-      url: "https://ul.waze.com/ul?place=ChIJx2qvNK3jTBURpqYP62StY4U&ll=36.31793750%2C41.85181250&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location",
-      icon: "fa-brands fa-waze"
-    }
+    { name: "Facebook", label: "صفحة المجمع", url: "https://www.facebook.com/NabaaMedicalComplex", icon: "fa-brands fa-facebook-f" },
+    { name: "Instagram", label: "@nabaacomplex", url: "https://www.instagram.com/nabaacomplex", icon: "fa-brands fa-instagram" },
+    { name: "TikTok", label: "@nabaacomplex", url: "https://www.tiktok.com/@nabaacomplex", icon: "fa-brands fa-tiktok" },
+    { name: "Google Maps", label: "الموقع والاتجاهات", url: "https://maps.app.goo.gl/Tj2rkX3As4VZuWJc8", icon: "fa-solid fa-map-location-dot" },
+    { name: "Waze", label: "الموقع والاتجاهات", url: "https://www.waze.com/en/live-map/directions/iq/nineveh-governorate/sinjar/mjma-nba-altby?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&place=ChIJx2qvNK3jTBURpqYP62StY4U", icon: "fa-brands fa-waze" }
   ]
 };
