@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0aa7a7">
-  <meta name="description" content="الصفحة الرسمية لمجمع نبأ الطبي في سنجار: الأطباء، مواعيد الحضور، أرقام الحجز، الموقع وحسابات التواصل الاجتماعي.">
-  <meta property="og:title" content="مجمع نبأ الطبي | Nabaa Medical Complex">
-  <meta property="og:description" content="الأطباء، مواعيد الحضور، الحجز، الموقع وحسابات التواصل الاجتماعي في صفحة واحدة.">
+  <meta name="description" content="مجمع نبأ الطبي في سنجار: عيادات جراحية وأطفال وحديثي الولادة ونسائية وتوليد وطب أسنان، إضافة إلى العناية التمريضية والصيدلية.">
+  <meta property="og:title" content="مجمع نبأ الطبي | رعاية طبية متكاملة في مكان واحد">
+  <meta property="og:description" content="تخصصات وخدمات طبية وصحية متكاملة ضمن بيئة منظمة وآمنة في سنجار.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/nabaa-logo.png">
   <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -23,6 +23,14 @@
     "@type": "MedicalClinic",
     "name": "مجمع نبأ الطبي",
     "alternateName": "Nabaa Medical Complex",
+    "description": "مجمع طبي متكامل يضم العيادة الجراحية وعيادة الأطفال وحديثي الولادة وعيادة النسائية والتوليد وعيادة طب الأسنان وخدمات العناية التمريضية والصيدلية.",
+    "medicalSpecialty": [
+      "Surgical",
+      "Pediatric",
+      "Obstetric",
+      "Gynecologic",
+      "Dentistry"
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "سنجار",
@@ -54,7 +62,8 @@
       <span>مجمع نبأ الطبي</span>
     </a>
     <nav aria-label="التنقل الرئيسي">
-      <a href="#doctors">الأطباء</a>
+      <a href="#services">الخدمات</a>
+      <a href="#why-us">لماذا نحن</a>
       <a href="#booking">الحجز</a>
       <a href="#location">الموقع</a>
     </nav>
@@ -65,14 +74,14 @@
       <div class="hero-card">
         <div class="hero-copy">
           <span class="eyebrow"><i class="fa-solid fa-location-dot"></i> سنجار — نينوى</span>
-          <h1>رعايتك الطبية<br><span>في مكان واحد</span></h1>
+          <h1>رعاية طبية متكاملة<br><span>في مكان واحد</span></h1>
           <p class="hero-description">
-            الصفحة الرسمية لمجمع نبأ الطبي. تعرف على الأطباء ومواعيد الحضور، واحجز أو تواصل معنا مباشرة.
+            يقدّم مجمع نبأ الطبي مجموعة متكاملة من الخدمات الطبية والصحية، ضمن بيئة منظّمة وآمنة تهدف إلى توفير رعاية موثوقة للمرضى من مختلف الفئات العمرية.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#booking">
-              <i class="fa-solid fa-phone"></i>
-              الحجز والاستفسار
+            <a class="button button-primary" href="#services">
+              <i class="fa-solid fa-stethoscope"></i>
+              استعراض خدماتنا
             </a>
             <a class="button button-secondary" data-link="maps" target="_blank" rel="noopener">
               <i class="fa-solid fa-map-location-dot"></i>
@@ -80,8 +89,9 @@
             </a>
           </div>
           <div class="trust-row">
-            <span><i class="fa-solid fa-user-doctor"></i> تخصصات طبية متعددة</span>
-            <span><i class="fa-solid fa-calendar-check"></i> مواعيد واضحة ومحدثة</span>
+            <span><i class="fa-solid fa-house-medical"></i> تخصصات متعددة</span>
+            <span><i class="fa-solid fa-shield-heart"></i> بيئة منظمة وآمنة</span>
+            <span><i class="fa-solid fa-user-shield"></i> خصوصية واحترام</span>
           </div>
         </div>
 
@@ -102,16 +112,15 @@
       <div id="social-list" class="social-list"></div>
     </section>
 
-
     <section class="quick-links section-shell" aria-label="روابط سريعة">
-      <a class="quick-card" href="#doctors">
+      <a class="quick-card" href="#services">
         <span class="quick-icon"><i class="fa-solid fa-stethoscope"></i></span>
-        <span><strong>الأطباء</strong><small>الاختصاصات والحضور</small></span>
+        <span><strong>خدماتنا الطبية</strong><small>العيادات والخدمات المساندة</small></span>
         <i class="fa-solid fa-arrow-left"></i>
       </a>
       <a class="quick-card" href="#booking">
-        <span class="quick-icon"><i class="fa-solid fa-calendar-check"></i></span>
-        <span><strong>حجز موعد</strong><small>اتصال مباشر</small></span>
+        <span class="quick-icon"><i class="fa-solid fa-phone-volume"></i></span>
+        <span><strong>الحجز والاستفسار</strong><small>اتصال مباشر بالمجمع</small></span>
         <i class="fa-solid fa-arrow-left"></i>
       </a>
       <a class="quick-card" href="#location">
@@ -121,14 +130,66 @@
       </a>
     </section>
 
-    <section id="doctors" class="section-shell content-section">
-      <div class="section-heading">
-        <div>
-          <span class="eyebrow">الفريق الطبي</span>
-          <h2>الأطباء ومواعيد الحضور</h2>
+    <section id="about" class="section-shell content-section intro-section">
+      <div class="intro-panel">
+        <div class="intro-title">
+          <span class="eyebrow">مجمع نبأ الطبي</span>
+          <h2>خدمات صحية متكاملة<br>ضمن رحلة علاجية أوضح</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            يضم المجمع عدداً من العيادات التخصصية والخدمات المساندة، مع الحرص على الدقة في التقييم، وضوح الخطة العلاجية، احترام خصوصية المريض، والالتزام بمعايير النظافة والسلامة الطبية.
+          </p>
+          <p>
+            هدفنا هو تسهيل وصول المراجع إلى الخدمات التي يحتاجها في مكان واحد، بدءاً من الاستشارة الطبية والفحص، مروراً بالمتابعة والعناية التمريضية، ووصولاً إلى توفير الأدوية والمستلزمات العلاجية.
+          </p>
         </div>
       </div>
-      <div id="doctor-grid" class="doctor-grid"></div>
+    </section>
+
+    <section id="services" class="section-shell content-section services-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">خدماتنا الطبية</span>
+          <h2>العيادات والخدمات المتوفرة</h2>
+        </div>
+        <p>خدمات تخصصية ومساندة مصممة لتسهيل حصول المراجع على التقييم والمتابعة والعلاج ضمن مكان واحد.</p>
+      </div>
+      <div id="service-grid" class="service-grid"></div>
+    </section>
+
+    <section id="why-us" class="section-shell content-section">
+      <div class="why-panel">
+        <div class="why-copy">
+          <span class="eyebrow light">لماذا تختار مجمع نبأ الطبي؟</span>
+          <h2>تجربة صحية ترتكز على التنظيم والوضوح</h2>
+          <p>نعمل على تقديم رعاية متكاملة تراعي احتياجات المريض وتفاصيل رحلته داخل المجمع.</p>
+        </div>
+        <ul class="why-list">
+          <li><i class="fa-solid fa-check"></i><span>تعدد الاختصاصات والخدمات الطبية في مكان واحد.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>الاهتمام براحة المريض وخصوصيته.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>تنظيم المواعيد وتقليل وقت الانتظار قدر الإمكان.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>الالتزام بالنظافة والتعقيم وإجراءات السلامة.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>توضيح التشخيص والخطة العلاجية للمريض بصورة مفهومة.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>توفير المتابعة الطبية والتمريضية عند الحاجة.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>التعامل المهني والإنساني مع جميع المراجعين.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-shell content-section values-section">
+      <div class="value-card">
+        <span class="value-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+        <span class="eyebrow">رسالتنا</span>
+        <h2>رعاية موثوقة وسهلة الوصول</h2>
+        <p>نسعى إلى تقديم رعاية صحية موثوقة وسهلة الوصول، تجمع بين الكفاءة الطبية، حسن التعامل، والاهتمام بتفاصيل رحلة المريض منذ لحظة دخوله إلى المجمع وحتى انتهاء المتابعة العلاجية.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon"><i class="fa-solid fa-eye"></i></span>
+        <span class="eyebrow">رؤيتنا</span>
+        <h2>وجهة صحية متكاملة للمجتمع</h2>
+        <p>أن يكون مجمع نبأ الطبي وجهة صحية متكاملة تلبي احتياجات الأفراد والعائلات، وتساهم في تعزيز الوعي الصحي وتحسين جودة الخدمات الطبية المقدمة للمجتمع.</p>
+      </div>
     </section>
 
     <section id="booking" class="section-shell content-section">
@@ -174,7 +235,6 @@
         </a>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer section-shell">

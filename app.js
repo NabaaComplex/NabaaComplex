@@ -15,69 +15,76 @@
   const address = document.getElementById("address-text");
   if (address) address.textContent = data.clinic.address;
 
-  const doctorGrid = document.getElementById("doctor-grid");
-  data.doctors.forEach((doctor, index) => {
-    const card = document.createElement("article");
-    card.className = "doctor-card";
+  const serviceGrid = document.getElementById("service-grid");
+  if (serviceGrid) {
+    data.services.forEach((service, index) => {
+      const card = document.createElement("article");
+      card.className = "service-card";
 
-    const chips = doctor.days.map(day =>
-      `<span class="day-chip ${doctor.scheduleType === "variable" ? "variable" : ""}">${day}</span>`
-    ).join("");
+      const listItems = service.items
+        .map(item => `<li><i class="fa-solid fa-check" aria-hidden="true"></i><span>${item}</span></li>`)
+        .join("");
 
-    card.innerHTML = `
-      <div class="doctor-photo-wrap">
-        <img class="doctor-photo" src="${doctor.photo}" alt="صورة ${doctor.name}" loading="lazy">
-      </div>
-      <div class="doctor-info">
-        <h3 class="doctor-name">${doctor.name}</h3>
-        <p class="doctor-specialty">${doctor.specialty}</p>
-      </div>
-      <div class="schedule-block">
-        <div class="schedule-label"><i class="fa-regular fa-calendar"></i> موعد الحضور</div>
-        <div class="day-list">${chips}</div>
-      </div>
-    `;
-    doctorGrid.appendChild(card);
-  });
+      card.innerHTML = `
+        <div class="service-card-head">
+          <span class="service-icon" aria-hidden="true"><i class="${service.icon}"></i></span>
+          <div>
+            <span class="service-number">${String(index + 1).padStart(2, "0")}</span>
+            <h3>${service.title}</h3>
+          </div>
+        </div>
+        <p class="service-description">${service.description}</p>
+        <div class="service-list-label">${service.listLabel || "تشمل الخدمات:"}</div>
+        <ul class="service-list">${listItems}</ul>
+      `;
+
+      serviceGrid.appendChild(card);
+    });
+  }
 
   const phoneList = document.getElementById("phone-list");
-  data.phones.forEach(phone => {
-    const item = document.createElement("div");
-    item.className = "phone-item";
-    item.innerHTML = `
-      <a class="phone-call" href="tel:${phone.tel}" aria-label="الاتصال على ${phone.display}">
-        <i class="fa-solid fa-phone"></i>
-      </a>
-      <a class="phone-number" href="tel:${phone.tel}">${phone.display}</a>
-      <button class="copy-button" type="button" data-copy="${phone.display}">
-        <i class="fa-regular fa-copy"></i> نسخ الرقم
-      </button>
-    `;
-    phoneList.appendChild(item);
-  });
+  if (phoneList) {
+    data.phones.forEach(phone => {
+      const item = document.createElement("div");
+      item.className = "phone-item";
+      item.innerHTML = `
+        <a class="phone-call" href="tel:${phone.tel}" aria-label="الاتصال على ${phone.display}">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a class="phone-number" href="tel:${phone.tel}">${phone.display}</a>
+        <button class="copy-button" type="button" data-copy="${phone.display}">
+          <i class="fa-regular fa-copy"></i> نسخ الرقم
+        </button>
+      `;
+      phoneList.appendChild(item);
+    });
+  }
 
   const socialList = document.getElementById("social-list");
-  data.social.forEach(network => {
-    const card = document.createElement("a");
-    card.className = "social-card";
-    card.dataset.network = network.name;
-    card.href = network.url;
-    card.target = "_blank";
-    card.rel = "noopener";
-    card.innerHTML = `
-      <span class="social-icon"><i class="${network.icon}"></i></span>
-      <span>
-        <strong>${network.name}</strong>
-        <small>${network.label}</small>
-      </span>
-    `;
-    socialList.appendChild(card);
-  });
+  if (socialList) {
+    data.social.forEach(network => {
+      const card = document.createElement("a");
+      card.className = "social-card";
+      card.dataset.network = network.name;
+      card.href = network.url;
+      card.target = "_blank";
+      card.rel = "noopener";
+      card.innerHTML = `
+        <span class="social-icon"><i class="${network.icon}"></i></span>
+        <span>
+          <strong>${network.name}</strong>
+          <small>${network.label}</small>
+        </span>
+      `;
+      socialList.appendChild(card);
+    });
+  }
 
   const toast = document.getElementById("toast");
   let toastTimer;
 
   function showToast(message) {
+    if (!toast) return;
     toast.textContent = message;
     toast.classList.add("show");
     clearTimeout(toastTimer);
@@ -102,5 +109,6 @@
     }
   });
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 })();
